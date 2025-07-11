@@ -1,172 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Hobby Gallery</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 4vw;
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      font-size: clamp(1.8rem, 5vw, 3rem);
-      color: #333;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: clamp(1rem, 2vw, 1.2rem);
-      color: #666;
-      margin-top: 0.8rem;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem 0;
-    }
-
-    .hobby {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 1rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .hobby:hover {
-      transform: scale(1.02);
-    }
-
-    .hobby img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: 10px;
-      margin-bottom: 1rem;
-      height: 200px;
-    }
-
-    .hobby h2 {
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      color: #0077cc;
-      margin-bottom: 0.5rem;
-    }
-
-    .hobby p {
-      font-size: clamp(0.95rem, 2vw, 1.1rem);
-      color: #444;
-    }
-
-    .hobby a {
-      display: inline-block;
-      margin-top: 0.8rem;
-      color: #0055aa;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: clamp(0.9rem, 2vw, 1rem);
-    }
-
-    .hobby a:hover {
-      color: #ff5500;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 5vw;
-      font-size: 0.9rem;
-      color: #888;
-      padding-bottom: 2rem;
-    }
-
-    @media (max-width: 480px) {
       .container {
-        padding: 0 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 4vw;
+        padding: 2rem 1rem;
+      }
+
+      h1 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      header p {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        color: #666;
+        margin-top: 0.8rem;
       }
 
       .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1.5rem;
+        padding: 2rem 0;
       }
 
       .hobby {
-        padding: 0.8rem;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .hobby:hover {
+        transform: scale(1.02);
       }
 
       .hobby img {
-        aspect-ratio: 1 / 1;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        height: 200px;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <div class="container">
-    <header>
-      <h1>Welcome to My Hobby Gallery</h1>
-      <p>Here are some of my favorite hobbies that bring me joy and creativity.</p>
-    </header>
+      .hobby h2 {
+        font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+        color: #0077cc;
+        margin-bottom: 0.5rem;
+      }
 
-    <main class="gallery">
-      <section class="hobby">
-        <img src="premium_photo-1671120313427-c7ff4a621661.avif" alt="Colorful Painting">
-        <h2>Painting</h2>
-        <p>I love expressing my emotions through colors and brush strokes. It relaxes me and boosts creativity.</p>
-        <a href="https://www.youtube.com/results?search_query=painting" target="_blank">Learn Painting</a>
-      </section>
+      .hobby p {
+        font-size: clamp(0.95rem, 2vw, 1.1rem);
+        color: #444;
+      }
 
-      <section class="hobby">
-        <img src="photo-1629107951746-6bbea48d3e51.avif" alt="Cycling Adventure">
-        <h2>Cycling</h2>
-        <p>Going for long rides helps me stay fit and explore new places around the city.</p>
-        <a href="https://www.cyclingweekly.com/" target="_blank">Cycling Tips</a>
-      </section>
+      .hobby a {
+        display: inline-block;
+        margin-top: 0.8rem;
+        color: #0055aa;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: clamp(0.9rem, 2vw, 1rem);
+      }
 
-      <section class="hobby">
-        <img src="photo-1599488059966-a42a2ab36991.avif" alt="Books and Reading">
-        <h2>Reading</h2>
-        <p>Books transport me to different worlds. I especially enjoy fiction and self-help genres.</p>
-        <a href="https://www.goodreads.com/" target="_blank">Find Great Books</a>
-      </section>
+      .hobby a:hover {
+        color: #ff5500;
+      }
 
-      <section class="hobby">
-        <img src="photo-1704717700477-69f9509f9af2.avif" alt="Coding on Laptop" />
-        <h2>Coding</h2>
-        <p>Coding feels like magic — writing lines that turn into working applications. I enjoy building projects and
-          learning new technologies.</p>
-        <a href="https://www.w3schools.com/" target="_blank">Explore Coding</a>
-      </section>
-    </main>
+      footer {
+        text-align: center;
+        margin-top: 5vw;
+        font-size: 0.9rem;
+        color: #888;
+        padding-bottom: 2rem;
+      }
 
-    <footer>
-      <p>&copy; 2025 My Hobby Gallery. All rights reserved.</p>
-    </footer>
-  </div>
-</body>
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 1rem;
+        }
 
+        .gallery {
+          gap: 1.5rem;
+        }
+
+        .hobby {
+          padding: 0.8rem;
+        }
+
+        .hobby img {
+          aspect-ratio: 1 / 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to My Hobby Gallery</h1>
+        <p>
+          Here are some of my favorite hobbies that bring me joy and creativity.
+        </p>
+      </header>
+
+      <main class="gallery">
+        <section class="hobby">
+          <img
+            src="premium_photo-1671120313427-c7ff4a621661.avif"
+            alt="Colorful Painting"
+          />
+          <h2>Painting</h2>
+          <p>
+            I love expressing my emotions through colors and brush strokes. It
+            relaxes me and boosts creativity.
+          </p>
+          <a
+            href="https://www.youtube.com/results?search_query=painting"
+            target="_blank"
+            >Learn Painting</a
+          >
+        </section>
+
+        <section class="hobby">
+          <img
+            src="photo-1629107951746-6bbea48d3e51.avif"
+            alt="Cycling Adventure"
+          />
+          <h2>Cycling</h2>
+          <p>
+            Going for long rides helps me stay fit and explore new places around
+            the city.
+          </p>
+          <a href="https://www.cyclingweekly.com/" target="_blank"
+            >Cycling Tips</a
+          >
+        </section>
+
+        <section class="hobby">
+          <img
+            src="photo-1599488059966-a42a2ab36991.avif"
+            alt="Books and Reading"
+          />
+          <h2>Reading</h2>
+          <p>
+            Books transport me to different worlds. I especially enjoy fiction
+            and self-help genres.
+          </p>
+          <a href="https://www.goodreads.com/" target="_blank"
+            >Find Great Books</a
+          >
+        </section>
+
+        <section class="hobby">
+          <img
+            src="photo-1704717700477-69f9509f9af2.avif"
+            alt="Coding on Laptop"
+          />
+          <h2>Coding</h2>
+          <p>
+            Coding feels like magic — writing lines that turn into working
+            applications. I enjoy building projects and learning new
+            technologies.
+          </p>
+          <a href="https://www.w3schools.com/" target="_blank"
+            >Explore Coding</a
+          >
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 My Hobby Gallery. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
 </html>
